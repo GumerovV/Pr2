@@ -1,4 +1,4 @@
-def gaps():
+def main():
     month = marks = sumdays = 0
     days = 2
     while(marks<=70 and month<9):
@@ -6,10 +6,9 @@ def gaps():
         sumdays+=days
         month+=1
         days += 1
+    print("Чтобы не быть очисленным, Василий может допустить следующее количество")
     print("Количество уходов в загул: ", month-1)
     print("Количество прогулов: ", sumdays-days+1)
 
-def main():
-    print("Чтобы не быть очисленным, Василий может допустить следующее количество")
-    gaps()
-main()
+if __name__ == "__main__":
+    main()
